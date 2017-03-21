@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<div class="logo-container"><img style="height: 20px; line-height: 50px; display: inline-block;" src="images/Halo.png"/></div>
+				<ul class="user-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li id="notifications" style="position: relative;"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    	<div class="notification-dropdown animated"><div class="top-caret"></div>
+                        	<div class="notification-title">Conversations</div>
+                                <div class="notification-list">
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/128.jpg)"></div>
+                                        <div class="not-time">Just Now</div>
+                                        <div class="not-title">Tom Low</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">Hey Buddy! Just seeing how you're doing.</div>
+                                    </div>
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/129.jpg)"></div>
+                                        <div class="not-time">24m</div>
+                                        <div class="not-title">Jerry Bulmer</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">How's life?</div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="not-time">Yesterday</div>
+                                        <div class="not-title"><span style="color:#1B7FC8">Jan Lewis</span> has just made you a favorite.</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="end-not-list">View all Notifications</div>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+					<li style="position: relative;"><i style="font-size: 8pt; color:#bbb; position: absolute;left:10px;top:4px;" class="fa fa-search"></i><input style="height:20px;background:#fff; border:solid 1px #e0e0e0;" type="text"/></li>
+					
+					
+					
+				
+				</ul>
+                
+			</div>
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="container">
+				
+				
+				<div class="main-wrapper" style="text-align:center;">
+               		<div class="panel" style="padding: 0; overflow: auto; height:calc(100vh - 50px);">
+						<div class="col-sm-3" style="padding:15px;overflow:hidden; text-align:left; min-height:700px; border-right:solid 1px #e0e0e0; height:100%;">
+
+							<div style="display: flex; align-items: center;">
+								<div style="color:#606060; font-size:15pt; margin-bottom:7px; float:left;"><i class="fa fa-calendar"></i>&nbsp;&nbsp;My Events</div>
+								<div style="color:#606060; font-size:10pt; margin-bottom:7px; float:right; margin-left:auto;">4 of 4</div>
+							</div>
+							<div class="search-messages"><i style="position:absolute;top: 6px;left: 8px; color:#888888;" class="fa fa-search"></i><input type="text"/></div>
+						<div class="calendar-time-frame">
+							<div class="calendar-time-tab">Today</div>
+							<div class="calendar-time-tab active">This Week</div>
+							<div class="calendar-time-tab">This Month</div>
+
+						</div>
+							<div class="conversation-list">
+								<div class="conversation-item active">
+									<div class="conversation-title"><div class="date-badge">Mar 2</div>John Sherry</div>
+									<div class="conversation-time">11:34 am</div>
+									<div class="conversation-preview">John Sherry will be speaking at the auditorium later this evening.</div>
+									<div class="conversation-close"><i class="fa fa-times"></i></div>
+								</div>
+								<div class="conversation-item">
+									<div class="conversation-title"><div class="date-badge">Mar 7</div>Date Night</div>
+									<div class="conversation-time">11:34 am</div>
+									<div class="conversation-preview">Come bring a date to this weeks date night! we will be showing a movie and serving food and drinks.</div>
+									<div class="conversation-close"><i class="fa fa-times"></i></div>
+								</div>
+								<div class="conversation-item">
+									<div class="conversation-title"><div class="date-badge">Mar 14</div>Valentines Day Dinner</div>
+									<div class="conversation-time">11:34 am</div>
+									<div class="conversation-preview">Valentines dinner for you and a special someone</div>
+									<div class="conversation-close"><i class="fa fa-times"></i></div>
+								</div>
+								<div class="conversation-item">
+									<div class="conversation-title"><div class="date-badge">Mar 20</div>Food Trucks</div>
+									<div class="conversation-time">11:34 am</div>
+									<div class="conversation-preview">We will be having food trucks out by the quad so come hungry and leave happy!</div>
+									<div class="conversation-close"><i class="fa fa-times"></i></div>
+								</div>
+							</div>
+
+					</div>
+						<div class="col-sm-9" style="padding:15px;min-height:700px;">
+
+								<div class="conversation-inner-title" style="float:left;"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Calendar</div>
+								<div class="calendar-container">
+									<div class="calendar-title"><i class="fa fa-chevron-left"></i>March<i class="fa fa-chevron-right"></i></div>
+									<div class="row calendar-week">
+										<div class="calendar-day">1
+											<br><span><i class="fa fa-calendar"></i> Breakfast At..</span>
+										</div>
+										<div class="calendar-day">2</div>
+										<div class="calendar-day">3</div>
+										<div class="calendar-day">4</div>
+										<div class="calendar-day">5</div>
+										<div class="calendar-day">6
+											<br><span><i class="fa fa-calendar"></i> Breakfast At..</span>
+										</div>
+										<div class="calendar-day">7</div>
+									</div>
+								<div class="row calendar-week">
+										<div class="calendar-day">8</div>
+										<div class="calendar-day">9</div>
+										<div class="calendar-day">10</div>
+										<div class="calendar-day">11</div>
+										<div class="calendar-day">12</div>
+										<div class="calendar-day">13</div>
+										<div class="calendar-day">14</div>
+									</div>
+								<div class="row calendar-week">
+										<div class="calendar-day">15</div>
+										<div class="calendar-day today">16 Today</div>
+										<div class="calendar-day">17</div>
+										<div class="calendar-day">18</div>
+										<div class="calendar-day">19
+											<br><span><i class="fa fa-calendar"></i> Breakfast At..</span>
+											<br><span><i class="fa fa-calendar"></i> Coldstone C..</span>
+											<br><span><i class="fa fa-calendar"></i> Career Cent..</span>
+											<br><span><i class="fa fa-calendar"></i> +3 more</span>
+										</div>
+										<div class="calendar-day">20</div>
+										<div class="calendar-day">21</div>
+									</div>
+								<div class="row calendar-week">
+										<div class="calendar-day">22</div>
+										<div class="calendar-day">23</div>
+										<div class="calendar-day">24</div>
+										<div class="calendar-day">25
+											<br><span><i class="fa fa-calendar"></i> Breakfast At..</span>
+										</div>
+										<div class="calendar-day">26<br>
+											<br><span><i class="fa fa-calendar"></i> Breakfast At..</span>
+										</div>
+										<div class="calendar-day">27</div>
+										<div class="calendar-day">28</div>
+									</div>
+								<div class="row calendar-week">
+										<div class="calendar-day">29</div>
+										<div class="calendar-day">30</div>
+										<div class="calendar-day">31</div>
+
+									</div>
+
+								</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		
+	</div>
+    <script>
+    	$(document).ready(function(e) {
+            $('#notifications').click(function(){
+				if($('.notification-dropdown').hasClass('fadeInUp')){
+					$('.notification-dropdown').removeClass('fadeInUp');
+					$('.notification-dropdown').addClass('fadeOutDown');
+					$('.notification-dropdown').css('pointer-events','none');
+					
+				}else{
+					$('.notification-dropdown').removeClass('fadeOutDown');
+					$('.notification-dropdown').addClass('fadeInUp');
+					$('.notification-dropdown').css('pointer-events','auto');
+				}
+			});
+        });
+    </script>
+</body>
+</html>

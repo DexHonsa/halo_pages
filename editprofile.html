@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/dash.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/edit-profile.css">
+    
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<div class="logo-container"><img style="height: 20px; line-height: 50px; display: inline-block;" src="images/Halo.png"/></div>
+				<ul class="user-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li id="notifications" style="position: relative;"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    	<div class="notification-dropdown animated"><div class="top-caret"></div>
+                        	<div class="notification-title">Conversations</div>
+                                <div class="notification-list">
+                                    <a href="messages.html"><div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/128.jpg)"></div>
+                                        <div class="not-time">Just Now</div>
+                                        <div class="not-title">Tom Low</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">Hey Buddy! Just seeing how you're doing.</div>
+										</div></a>
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/129.jpg)"></div>
+                                        <div class="not-time">24m</div>
+                                        <div class="not-title">Jerry Bulmer</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">How's life?</div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="not-time">Yesterday</div>
+                                        <div class="not-title"><span style="color:#1B7FC8">Jan Lewis</span> has just made you a favorite.</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="end-not-list">View all Notifications</div>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+					<li style="position: relative;"><i style="font-size: 8pt; color:#bbb; position: absolute;left:10px;top:4px;" class="fa fa-search"></i><input style="height:20px;background:#fff; border:solid 1px #e0e0e0;" type="text"/></li>
+					
+					
+					
+				
+				</ul>
+                
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				
+				
+				<div class="main-wrapper" style="">
+				<div class="panel" style="overflow: auto; padding:0; height:calc(100vh - 50px);">
+					<div class="col-sm-3" style="padding:15px; text-align:left; height:100%; border-right:solid 1px #e0e0e0; padding-top:25px;">
+
+							<div class="edit-options-title"><i class="fa fa-gear"></i>&nbsp;&nbsp;Edit Profile</div>
+							<div class="edit-list">
+								<ul>
+									<li id="basic-info" class="active">Basic Info <i class="fa fa-chevron-right"></i></li>
+
+
+								</ul>
+
+							</div>
+
+					</div>
+					<div class="col-sm-9" style="padding:25px; padding-top:25px;">
+					
+					<div id="basic-info-content" class="basic-info">
+						<div class="edit-main-title">Basic Information</div>
+						<div class="edit-item">
+							<div class="edit-title">Profile Picture</div>
+							<div class="edit-picture-img" style="background-image: url(images/John.png);"><div class="overlay"><i class="fa fa-camera"></i></div></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Name</div>
+							<div class="edit-input"><input type="text" value="Ashley Rhodes"/></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Phone</div>
+							<div class="edit-input"><input type="text" value="(760)534-9625" /></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Email</div>
+							<div class="edit-input"><input type="text" value="Ashley@theamp.com" /></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Address</div>
+							<div class="edit-input"><input type="text" value="4544 San Leandro Ave, San Francisco CA, 94545"/></div>
+							
+						</div>
+						
+						</div>
+						
+						<!--education-->
+						<div id="education-info-content" class="education-info" style="display:none;">
+						<div class="edit-main-title">Education Information</div>
+						<div class="edit-item">
+							<div class="edit-title">Years Attended</div>
+							<div class="edit-input"><input type="text" value="3"/></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Program</div>
+							<div class="edit-input"><input type="text" value="Masters Program" /></div>
+							
+						</div>
+						
+						</div>
+						<!--work History-->
+						<div id="work-info-content" class="work-info" style="display:none;">
+						<div class="edit-main-title">Work Information</div>
+						<div class="edit-item">
+							<div class="edit-title">Current Employer</div>
+							<div class="edit-input"><input type="text" value="Wells Fargo"/></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Position</div>
+							<div class="edit-input"><input type="text" value="Financial Advisor" /></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Years at Current Job</div>
+							<div class="edit-input"><input type="text" value="3" /></div>
+							
+						</div>
+						<div class="edit-item">
+							<div class="edit-title">Resume</div>
+							<div class="edit-upload">Upload Resume</div>
+							
+						</div>
+						
+						</div>
+						<a href="index.html"><div class="save-changes-btn">Save Changes</div></a>
+						
+			
+				</div>
+				</div>
+					
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		<aside class="sidebar">
+			<a href="#" class="btn-toggle"><span></span></a>
+		</aside>
+	</div>
+	
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.edit-list li').click(function(){
+				var ID = $(this).attr('id');
+				var selector = ID + '-content';
+				$('#' + selector).show();
+				$('#' + selector).siblings().hide();
+				if($(this).hasClass('active')){
+
+				}else{
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+				}
+			});
+		});
+		$('#notifications').click(function(){
+				if($('.notification-dropdown').hasClass('fadeInUp')){
+					$('.notification-dropdown').removeClass('fadeInUp');
+					$('.notification-dropdown').addClass('fadeOutDown');
+					$('.notification-dropdown').css('pointer-events','none');
+					
+				}else{
+					$('.notification-dropdown').removeClass('fadeOutDown');
+					$('.notification-dropdown').addClass('fadeInUp');
+					$('.notification-dropdown').css('pointer-events','auto');
+				}
+			});
+	
+	
+	
+	
+	</script>
+</body>
+</html>

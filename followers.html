@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<div class="logo-container"><img style="height: 20px; line-height: 50px; display: inline-block;" src="images/Halo.png"/></div>
+				<ul class="user-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li id="notifications" style="position: relative;"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    	<div class="notification-dropdown animated"><div class="top-caret"></div>
+                        	<div class="notification-title">Conversations</div>
+                                <div class="notification-list">
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/128.jpg)"></div>
+                                        <div class="not-time">Just Now</div>
+                                        <div class="not-title">Tom Low</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">Hey Buddy! Just seeing how you're doing.</div>
+                                    </div>
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/129.jpg)"></div>
+                                        <div class="not-time">24m</div>
+                                        <div class="not-title">Jerry Bulmer</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">How's life?</div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="not-time">Yesterday</div>
+                                        <div class="not-title"><span style="color:#1B7FC8">Jan Lewis</span> has just made you a favorite.</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="end-not-list">View all Notifications</div>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+					<li style="position: relative;"><i style="font-size: 8pt; color:#bbb; position: absolute;left:10px;top:4px;" class="fa fa-search"></i><input style="height:20px;background:#fff; border:solid 1px #e0e0e0;" type="text"/></li>
+					
+					
+					
+				
+				</ul>
+                
+			</div>
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="container">
+				
+				
+				<div class="main-wrapper" style="text-align:center;">
+                
+                <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0; padding-top:25px;">
+					<div class="tab-selector" style="text-align: left; border-bottom:solid 1px #e0e0e0; padding-top:5px;">
+						<div id="followers" class="tab-selector-tab active">Followers</div>
+						<div id="following" class="tab-selector-tab">Following</div>
+					</div>
+					<!--follower panel-->
+					<div class="follower-content">
+					<div class="follower-row">
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/136.jpg)"></div>
+							<div class="follower-name"><i style="color:#1CCE4D; font-size: 6pt;" class="fa fa-circle"></i> Jacob Fridley<br><span>AMP Technologies</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 232</div></div>
+							
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/128.jpg)"></div>
+							<div class="follower-name"><i style="color:#1CCE4D; font-size: 6pt;" class="fa fa-circle"></i> John Grey<br><span>Wells Fargo</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 45</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/129.jpg)"></div>
+							<div class="follower-name"><i style="color:#1CCE4D; font-size: 6pt;" class="fa fa-circle"></i> Barry Drewe<br><span>Wells Fargo</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 234</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/130.jpg)"></div>
+							<div class="follower-name">Hank Numer<br><span>Wells Fargo</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 112</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/131.jpg)"></div>
+							<div class="follower-name">Brad Fulmer<br><span>AMP Technologies</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 87</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/132.jpg)"></div>
+							<div class="follower-name">Nicole James<br><span>AMP Technologies</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 33</div></div>
+						</div>
+						
+					</div>
+					<div class="follower-row">
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/Johnny_headshot.jpg)"></div>
+							<div class="follower-name">Jason Wills<br><span>Johnson & Johnson</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 234</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/133.jpg)"></div>
+							<div class="follower-name">Victor Eisner<br><span>Telamerica</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 544</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/134.jpg)"></div>
+							<div class="follower-name"><i style="color:#1CCE4D; font-size: 6pt;" class="fa fa-circle"></i> Gary Busy<br><span>The M Group</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 123</div></div>
+						</div>
+						<div class="follower-item">
+							<div class="follower-img" style="background-image: url(images/135.jpg)"></div>
+							<div class="follower-name"><i style="color:#1CCE4D; font-size: 6pt;" class="fa fa-circle"></i> Kevin Randall<br><span>The M Group</span><br><div class="follower-count"><span style="color:#aaa;" class="glyphicon glyphicon-user" aria-hidden="true"></span> 55</div></div>
+						</div>
+						<div class="follower-item">
+							
+						</div>
+						<div class="follower-item">
+							
+						</div>
+						
+					</div>
+		
+					
+						
+					</div>
+                        
+                        
+					
+                        
+                    </div>
+        
+					
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		
+	</div>
+    <script>
+    	$(document).ready(function(e) {
+            $('#notifications').click(function(){
+				if($('.notification-dropdown').hasClass('fadeInUp')){
+					$('.notification-dropdown').removeClass('fadeInUp');
+					$('.notification-dropdown').addClass('fadeOutDown');
+					$('.notification-dropdown').css('pointer-events','none');
+					
+				}else{
+					$('.notification-dropdown').removeClass('fadeOutDown');
+					$('.notification-dropdown').addClass('fadeInUp');
+					$('.notification-dropdown').css('pointer-events','auto');
+				}
+			});
+        });
+    </script>
+</body>
+</html>

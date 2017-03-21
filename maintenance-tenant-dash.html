@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/maintenance.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<div class="logo-container"><img style="height: 20px; line-height: 50px; display: inline-block;" src="images/Halo.png"/></div>
+				<ul class="user-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li id="notifications" style="position: relative;"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    	<div class="notification-dropdown animated"><div class="top-caret"></div>
+                        	<div class="notification-title">Conversations</div>
+                                <div class="notification-list">
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/128.jpg)"></div>
+                                        <div class="not-time">Just Now</div>
+                                        <div class="not-title">Tom Low</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">Hey Buddy! Just seeing how you're doing.</div>
+                                    </div>
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/129.jpg)"></div>
+                                        <div class="not-time">24m</div>
+                                        <div class="not-title">Jerry Bulmer</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">How's life?</div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="not-time">Yesterday</div>
+                                        <div class="not-title"><span style="color:#1B7FC8">Jan Lewis</span> has just made you a favorite.</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="end-not-list">View all Notifications</div>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+					<li style="position: relative;"><i style="font-size: 8pt; color:#bbb; position: absolute;left:10px;top:4px;" class="fa fa-search"></i><input style="height:20px;background:#fff; border:solid 1px #e0e0e0;" type="text"/></li>
+					
+					
+					
+				
+				</ul>
+                
+			</div>
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="container">
+				
+				
+				<div class="main-wrapper" style="text-align:center;">
+                
+                <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0; padding-top:25px;">
+					<div class="page-title-head">Maintenance Requests
+					<div class="request-maintenance-btn">Request Maintenance</div>
+					</div>
+					
+					<div class="tab-selector" style="text-align: left; border-bottom:solid 1px #e0e0e0; padding-top:5px;">
+						<div id="pending-requests" class="tab-selector-tab active">Pending Requests</div>
+						<div id="active-requests" class="tab-selector-tab">Active Requests</div>
+						<div id="completed-requests" class="tab-selector-tab">Completed Requests</div>
+						
+					</div>
+					<table id="promo-table" class="promo-table">
+						   <tr><th>Tenant Name <i class="fa fa-caret-down"></i></th><th>Building <i class="fa fa-caret-down"></i></th><th>Suite <i class="fa fa-caret-down"></i></th><th>Request Date <i class="fa fa-caret-down"></i></th><th>Description <i class="fa fa-caret-down"></i></th></tr>
+						<tr><td><a href="maintenance-tenant-view-request.html"><div class="promo-titles">Johnson & Sons<br><span style="color:#EB951B">Tenant Admin:</span><span style="color:#469df5;">Johnny V</span><br><span style="font-size: 8pt; color:#808080;">Status: Pending</span> </div></a></td><td>Bishop Ranch 6</td><td>200A</td><td>1/12/17</td><td>There was a pipe that is leaking underneath the sink in the kitchen.  I think you should send someone out to look at it to get it fixed as soon as possible because it is starting to get on the floor.</td></tr>
+						   
+						   
+						   
+						   
+						    
+						</table>
+					
+                        
+                        
+					
+                        
+                    </div>
+        
+					
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		
+	</div>
+    <script>
+    	$(document).ready(function(e) {
+            $('#notifications').click(function(){
+				if($('.notification-dropdown').hasClass('fadeInUp')){
+					$('.notification-dropdown').removeClass('fadeInUp');
+					$('.notification-dropdown').addClass('fadeOutDown');
+					$('.notification-dropdown').css('pointer-events','none');
+					
+				}else{
+					$('.notification-dropdown').removeClass('fadeOutDown');
+					$('.notification-dropdown').addClass('fadeInUp');
+					$('.notification-dropdown').css('pointer-events','auto');
+				}
+			});
+        });
+    </script>
+</body>
+</html>

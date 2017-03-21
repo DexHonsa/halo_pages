@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<div class="logo-container"><img style="height: 20px; line-height: 50px; display: inline-block;" src="images/Halo.png"/></div>
+				<ul class="user-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li id="notifications" style="position: relative;"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    	<div class="notification-dropdown animated"><div class="top-caret"></div>
+                        	<div class="notification-title">Conversations</div>
+                                <div class="notification-list">
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/128.jpg)"></div>
+                                        <div class="not-time">Just Now</div>
+                                        <div class="not-title">Tom Low</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">Hey Buddy! Just seeing how you're doing.</div>
+                                    </div>
+                                    <div class="notification-item">
+                                    	<div class="not-img" style="background-image: url(images/129.jpg)"></div>
+                                        <div class="not-time">24m</div>
+                                        <div class="not-title">Jerry Bulmer</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                        <div class="not-content">How's life?</div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="not-time">Yesterday</div>
+                                        <div class="not-title"><span style="color:#1B7FC8">Jan Lewis</span> has just made you a favorite.</div>
+                                        <div class="not-close"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="end-not-list">View all Notifications</div>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+					<li style="position: relative;"><i style="font-size: 8pt; color:#bbb; position: absolute;left:10px;top:4px;" class="fa fa-search"></i><input style="height:20px;background:#fff; border:solid 1px #e0e0e0;" type="text"/></li>
+					
+					
+					
+				
+				</ul>
+                
+			</div>
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="container">
+				<div class="overlay" style="display:none;">
+					<div class="send-message-popup">
+						<div class="modal-top">Send Message To Tenants
+							<i id="close-popup" class="fa fa-close"></i>
+						</div><div class="send-message-popup-stage">
+						<div class="popup-selector-dropdown" style="margin-bottom:20px;">
+						<select>
+						<option>All Tenants</option>
+						<option>Wells Fargo</option>
+						<option>Brookfield</option>
+						<option>Demont</option>
+						<option>Meridian</option>
+						<option>Fico Tech</option>
+						<option>Remedy Co.</option>
+						
+						</select></div>
+						<div class="popup-selector-dropdown" style="margin-bottom:20px;">
+						<select>
+						<option>Type of Emergency</option>
+						<option>Flood</option>
+						<option>Fire</option>
+						<option>Fire Drill</option>
+						<option>Earthquake</option>
+						<option>Shooter</option>
+						<option>Bomb Threat</option>
+						<option>Other</option>
+						
+						</select></div>
+						
+						<div class="text-box">
+							<textarea placeholder="Your Message..."></textarea>
+						</div>
+						<div class="send-message-btn">Send</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="main-wrapper" style="text-align:center;">
+                
+                <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0; padding-top:25px;">
+					<div class="view-all-title">Security Roster By Tenant
+					<div id="send-message-btn" class="add-roster-btn" style="float: right;">Send Message</div>
+					</div>
+					
+					<div class="tab-selector" style="text-align: left; border-bottom:solid 1px #e0e0e0; padding-top:5px;">
+						<div id="followers" class="tab-selector-tab active">Tenants</div>
+						
+					</div>
+					
+					<div class="view-all-container-search">
+						<input placeholder="Search..." type="text"  />
+					</div>
+					<div class="view-all-container">
+					<div class="view-all-container-row">
+						<div class="view-all-item">
+							<a href="view-all-roster.html"><div class="view-all-item-img" style="background-image:url(images/2000px-Wells_Fargo_Bank.svg.png);" ></div></a>
+							<div class="view-all-item-title">Wells Fargo <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/colliers-logo.png)"></div>
+							<div class="view-all-item-title">Colliers International <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/GE_logo.png)"></div>
+							<div class="view-all-item-title">General Electric <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/GobyLogo.png)"></div>
+							<div class="view-all-item-title">Goby <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/biscuitLogoPre.png)"></div>
+							<div class="view-all-item-title">Biscuit <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/meduso_logo.png)"></div>
+							<div class="view-all-item-title">Meduso <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+					</div>
+					<div class="view-all-container-row">
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Velsoft_corporate_logo.png)"></div>
+							<div class="view-all-item-title">Velsoft <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Deluxe_logo.png)"></div>
+							<div class="view-all-item-title">Deluxe <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Pro_Mach_Inc_Corporate_Logo.png)"></div>
+							<div class="view-all-item-title">Pro Mach <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/westmont-logo.png)"></div>
+							<div class="view-all-item-title">Westmont <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Aria_Systems_Corporate_Logo.png)"></div>
+							<div class="view-all-item-title">Aria <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/APS_logo_2011.png)"></div>
+							<div class="view-all-item-title">Aps <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						</div>
+						<div class="view-all-container-row">
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Dirac_logo_RGB.png)"></div>
+							<div class="view-all-item-title">Dirac <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/logo-design-logo-designer-01.png)"></div>
+							<div class="view-all-item-title">Evervision <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/cobrand_logo.png)"></div>
+							<div class="view-all-item-title">Woodmont <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/JLL_corporate_logo.png)"></div>
+							<div class="view-all-item-title">JLL <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/LogoSOLID-2086x971-trans.png)"></div>
+							<div class="view-all-item-title">Energent <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Ventiv-logo.png)"></div>
+							<div class="view-all-item-title">Ventiv <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						</div>
+						<div class="view-all-container-row">
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/age-verification-ab-logo.png)"></div>
+							<div class="view-all-item-title">Anheiser Busch <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/cougar_logo.png)"></div>
+							<div class="view-all-item-title">Cougar <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Aon-Logo_big.png)"></div>
+							<div class="view-all-item-title">Aon <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/FiTech_logo.jpg)"></div>
+							<div class="view-all-item-title">Fitech <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/bmc-logo.jpg)"></div>
+							<div class="view-all-item-title">Burnham Moores <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						<div class="view-all-item">
+							<div class="view-all-item-img" style="background-image:url(images/Logos/Gelb-Logo-big.png)"></div>
+							<div class="view-all-item-title">Gelb <br> <span style="font-size: 8pt; color:#808080;">24 Employees</span><br><div class="follower-count">last updated: 12/01/2016</div></div>
+							
+						</div>
+						</div>
+						
+						<div class="pagination">page 1 of 1</div>
+					</div>
+					
+                        
+                        
+					
+                        
+                    </div>
+        
+					
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		
+	</div>
+    <script>
+		$('#send-message-btn').click(function(){
+			$('.overlay').fadeIn();
+			
+		});
+		$('#close-popup').click(function(){
+			$('.overlay').fadeOut();
+		});
+    	$(document).ready(function(e) {
+            $('#notifications').click(function(){
+				if($('.notification-dropdown').hasClass('fadeInUp')){
+					$('.notification-dropdown').removeClass('fadeInUp');
+					$('.notification-dropdown').addClass('fadeOutDown');
+					$('.notification-dropdown').css('pointer-events','none');
+					
+				}else{
+					$('.notification-dropdown').removeClass('fadeOutDown');
+					$('.notification-dropdown').addClass('fadeInUp');
+					$('.notification-dropdown').css('pointer-events','auto');
+				}
+			});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Tenant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="css/images/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
+	
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<ul class="user-nav">
+					<li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="container">
+				
+				
+				<div class="main-wrapper" style="text-align:center;">
+					<div class="login-container">
+                    	<div class="login-bar">
+                        	<div class="login-bar-progress"></div>
+                            </div>
+                            <h4 class="step-title">Step 1 of 4 - Create Account</h4>
+                            <div class="welcome-logo-container" >
+                            	<img style="width:100px;" src="images/USD.png"/>
+                                <h3 class="welcome-title">Welcome to <img style=" width:70px; padding-left:10px;margin-top:-3px;" src="images/Halo.png"/></h3>
+                                </div>
+                                <div id="made-user" class="user-img-box" style="display:none;">
+                                    <div class="user-img"></div>
+                                    <br>
+                                    <div class="user-name">Jacob Fridley</div>
+                                </div>
+                                <!--step 1 -->
+                                <div id="step_1" style="display:block;">
+                                <div class="login-fields">
+                                	<div class="username login-line-item">
+                                    	<div class="left-title">Username</div>
+                                        <div class="right-input"><input name="username" value="JacobFridley" type="text" /></div>
+                                    </div>
+                                    <div class="password login-line-item">
+                                    	<div class="left-title">Password</div>
+                                        <div class="right-input"><input name="username" value="Password" type="password" /></div>
+                                    </div>
+                                    <div class="password login-line-item">
+                                    	<div class="left-title">Re-enter Password</div>
+                                        <div class="right-input"><input name="username" value="Password" type="password" /></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div id="step_1_complete" class="create-btn">Create Account</div>
+                                <br>
+                                <div class="or-divider">
+                                	<span>OR</span>
+                                </div>
+                                <br>
+                                <div class="facebook-btn"><i style="float:left; text-align:left;" class="fa fa-facebook"></i>Login with Facebook</div>
+                                <br>
+                                <div class="linkdin-btn"><i style="float:left; text-align:left;" class="fa fa-linkedin"></i>Login with LinkdIn</div>
+                            </div>
+                                <!--step 2 -->
+                                <div id="step_2" style="display:none;">
+                                    <div class="login-fields">
+                                        <div class="username login-line-item">
+                                            <div class="left-title">Name</div>
+                                            <div class="right-input"><input name="username" value="Jacob Fridley" type="text" /></div>
+                                        </div>
+                                        <div class="password login-line-item">
+                                            <div class="left-title">Role</div>
+                                            <div class="right-input"><input class="disabled" name="username" value="Alumni" type="text" disabled /></div>
+                                        </div>
+                                        <div class="password login-line-item" style="border:none;">
+                                            <div class="left-title">Photos</div>
+                                            <br>
+                                            <div class="add-photo-btn"><i class="fa fa-camera"></i></div>
+                                        </div>
+                                        <div class="password login-line-item" style="border:none;">
+                                            <div class="left-title">About Me</div>
+                                            <br>
+                                            <div class="text-box"><textarea></textarea></div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div id="step_2_complete" class="create-btn">Continue</div>
+                                    <br>
+                                    
+                                </div>
+                                <!--step 3 -->
+                                <div id="step_3" style="display:none;">
+                                	
+                                    <div class="login-fields">
+                                        <div class="username login-line-item">
+                                            <div class="left-title">Year Graduated</div>
+                                            <div class="right-input"><input name="graduated" value="1992" type="text" /></div>
+                                        </div>
+                                        <div class="password login-line-item">
+                                            <div class="left-title">Major</div>
+                                            <div class="right-input"><input name="major" value="Finance" type="text" /></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <br>
+                                    <div id="step_3_complete" class="create-btn">Continue</div>
+                                    <br>
+                                    
+                                </div>
+                                <!--step 4 -->
+                                <div id="step_4" style="display:none;">
+                                	
+                                    <div class="login-fields">
+                                        <div class="username login-line-item">
+                                            <div class="left-title">Current Employer</div>
+                                            <div class="right-input"><input name="graduated" value="Wells Fargo" type="text" /></div>
+                                        </div>
+                                        <div class="password login-line-item">
+                                            <div class="left-title">Position</div>
+                                            <div class="right-input"><input name="major" value="Financial Advisor" type="text" /></div>
+                                        </div>
+                                        <div class="password login-line-item" style="border:none;">
+                                            <div class="left-title">Brief Job Description</div>
+                                            <br>
+                                            <div class="text-box"><textarea></textarea></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <br>
+                                    <div class="create-btn">Finish Account Creation</div>
+                                    <br>
+                                    
+                                </div>
+                            
+                        
+                    	
+                    </div>
+				</div>
+			</div>
+		</main><!-- /.main -->
+
+		<footer class="footer">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		
+	</div>
+    <script>
+    	$(document).ready(function(e) {
+            $('#step_1_complete').click(function(){
+				$('.step-title').html('Step 2 of 4 - Basic Information');
+				$('.login-bar-progress').addClass('step-2');
+				$('#step_1').addClass('animated');
+				$('#step_1').addClass('fadeOutLeft');
+				$('#step_1').fadeOut(500);
+				
+				setTimeout(function(){
+				$('.login-container').css('background-position','-150px 0px');
+				$('#step_2').addClass('animated');
+				$('#step_2').addClass('fadeInRight');
+				$('#step_2').fadeIn(500);
+				},510);
+			});
+			 $('#step_2_complete').click(function(){
+				 $('.step-title').html('Step 3 of 4 - Education History');
+				 $('.login-bar-progress').addClass('step-3');
+				 
+				$('#step_2').addClass('animated');
+				$('#step_2').addClass('fadeOutLeft');
+				$('#step_2').fadeOut(500);
+				setTimeout(function(){
+				$('.login-container').css('background-position','-180px 0px');
+				$('#made-user').addClass('animated');
+				 $('#made-user').addClass('fadeInUp');
+				 $('#made-user').fadeIn(500);
+				$('#step_3').addClass('animated');
+				$('#step_3').addClass('fadeInRight');
+				$('#step_3').fadeIn(500);
+				},510);
+			});
+			
+			$('#step_3_complete').click(function(){
+				 $('.step-title').html('Step 4 of 4 - Employment History');
+				 
+				 $('.login-bar-progress').addClass('step-4');
+				$('#step_3').addClass('animated');
+				$('#step_3').addClass('fadeOutLeft');
+				$('#step_3').fadeOut(500);
+				setTimeout(function(){
+					$('.login-container').css('background-position','-210px 0px');
+				$('#step_4').addClass('animated');
+				$('#step_4').addClass('fadeInRight');
+				$('#step_4').fadeIn(500);
+				},510);
+			});
+        });
+    </script>
+</body>
+</html>
