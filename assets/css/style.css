@@ -58,36 +58,23 @@ textarea,
 select { font-size: 15px; font-family: arial, sans-serif; }
 textarea { overflow: auto; resize: none; -webkit-overflow-scrolling: touch; }
 .popup-selector-dropdown select{
-	background: transparent;
-   width: 200px;
-   padding: 5px;
-   font-size: 10pt;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 30px;
-   -webkit-appearance: none;
-	overflow: auto;
+	
 	
 }
 .popup-selector-dropdown {
    width: 200px;
-   height: 30px;
-   overflow: hidden;
+   
+   
    background: url(../../images/down_arrow_select.png) no-repeat right #fff;
-   border: 1px solid #e0e0e0;
+   
 	z-index: 1000;
-	transition:all .3s ease;
+	
 	color:#808080;
 	
 	
    }
-.popup-selector-dropdown select{
-	width:100%;
-}
-.popup-selector-dropdown:hover{
-	border-color:#808080 !important;
-}
+
+
 .logo-container{
 	float: left;
 }
@@ -165,6 +152,11 @@ textarea { overflow: auto; resize: none; -webkit-overflow-scrolling: touch; }
 	float:left;
 	margin-right:10px;
 	border-radius:100px;
+}
+.selector-title{
+	font-size: 10pt;
+	color:#000;
+	margin:5px 0px;
 }
 .not-title{
 	font-size:8pt;

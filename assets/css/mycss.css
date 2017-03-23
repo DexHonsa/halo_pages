@@ -568,7 +568,7 @@ input:focus{
 }
 .send-message-popup{
 	background:#fff;
-	overflow: auto;
+	overflow: visible;
 	width:500px;
 	border-radius: 3px;
 }
@@ -612,5 +612,74 @@ input:focus{
 .send-message-popup-stage .popup-selector-dropdown{
 	width:100%;
 }
-
-
+.halo-about{
+	padding:0px 25px;
+	padding-bottom:25px;
+	flex:1;
+}
+.right-shortcuts{
+	margin-left: auto;
+	width:350px;
+	
+	padding:25px;
+	border-left: solid 1px #eaeaea;
+}
+.right-shortcut-title{
+	color:#999;
+	font-size: 12pt;
+	border-bottom:solid 1px #eaeaea;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+.right-shortcut-item{
+	font-size: 10pt;
+	color:#d0d0d0;
+	padding:3px 0px;
+}
+.right-shortcut-item a{
+	color:#999;
+	transition:none;
+}
+.right-shortcut-item a:hover{
+	color:#000;
+	cursor: pointer;
+	text-decoration: none;
+}
+.complaint-body textarea{
+	border:solid 1px #e0e0e0;
+	width:100%;
+	height:200px;
+	font-size: 10pt;
+	color:#808080;
+	padding:15px;
+}
+.recent-complaints{
+	margin-top:50px;
+}
+.recent-complaint-item{
+	width:100%;
+	display: flex;
+	align-items: center;
+	color:#999;
+	font-size: 12pt;
+	padding:10px 10px;
+}
+.recent-complaint-item:hover{
+	
+	cursor: pointer;
+	color:#000;
+}
+.recent-complaints h3{
+	border-bottom: solid 1px #e0e0e0;
+	padding-bottom:5px;
+	margin-bottom:0;
+}
+.complaint-details{
+	margin-left: auto;
+	font-size: 10pt;
+}
+.complaint-desc{
+	flex:2;
+	font-size: 10pt;
+	padding:0px 10px;
+}

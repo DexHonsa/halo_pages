@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
     <link rel="stylesheet" type="text/css" href="assets/css/maintenance.css">
     <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/selectize.css">
     
 	
 	<script src="assets/js/jquery-1.11.2.min.js"></script>
@@ -72,14 +73,14 @@
                 
                 <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0; padding-top:10px;">
 					<div class="maintenance-page-title">
-						<div class="maintenance-page-title-title">Maintenance Request for: <br><span style="color:#469df5; font-size:15pt; margin-top:5px; display: inline-block">Johnson & Sons</span></div>
+						<div class="maintenance-page-title-title">Maintenance Request for: <br><span style="color:#469df5; font-size:15pt; margin-top:5px; display: inline-block">Wells Fargo</span></div>
 						<div class="maintenance-page-status">Status: <span style="color:#F39701">Pending</span></div>
 					</div>
 					<div class="request-details-container">
 					<div class="tenant-admin-box">
 						<div class="tenant-admin">Tenant Admin</div>
-						<div class="tenant-admin-img" style="background-image:url(images/John.png);"></div>
-						<div class="tenant-admin-title">Ashley Rhodes<br><i class="fa fa-user"></i> 456</div>
+						<div class="tenant-admin-img" style="background-image:url(images/John2.png);"></div>
+						<div class="tenant-admin-title">John Sherry<br><i class="fa fa-user"></i> 456</div>
 					</div>
 					<div class="request-details-box">
 						<div class="request-detail-headers">
@@ -113,9 +114,9 @@
 						<div class="popup-selector-dropdown" style="flex:1;">
 								<select>
 									<option default>Choose a Vendor</option>
-									<option>Yaya Brothers</option>
-									<option>Yaya Brothers</option>
-									<option>Yaya Brothers</option>
+									<option>Bills Plumbing</option>
+									<option>Geek Squad</option>
+									<option>Sams Electronics</option>
 								</select>
 							</div>
 						</div>
@@ -176,6 +177,12 @@
 
 		
 	</div>
+   <script src="assets/js/selectize.js"></script>
+   <script>
+		$('select').selectize({
+			
+		});
+	</script>
     <script>
     	$(document).ready(function(e) {
             $('#notifications').click(function(){

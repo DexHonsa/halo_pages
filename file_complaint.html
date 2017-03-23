@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
     <link rel="stylesheet" type="text/css" href="assets/css/maintenance.css">
     <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/selectize.css">
     
 	
 	<script src="assets/js/jquery-1.11.2.min.js"></script>
@@ -70,53 +71,49 @@
 				
 				<div class="main-wrapper" style="text-align:center;">
                 
-                <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0; padding-top:10px;">
-					<div class="maintenance-page-title">
-						<div class="maintenance-page-title-title">Maintenance Request for: <br><span style="color:#469df5; font-size:15pt; margin-top:5px; display: inline-block">Wells Fargo</span></div>
-						<div class="maintenance-page-status">Status: <span style="color:#F39701">Pending</span></div>
-					</div>
-					<div class="request-details-container">
-					<div class="tenant-admin-box">
-						<div class="tenant-admin">Tenant Admin</div>
-						<div class="tenant-admin-img" style="background-image:url(images/John2.png)"></div>
-						<div class="tenant-admin-title">John Sherry<br><i class="fa fa-user"></i> 456</div>
-					</div>
-					<div class="request-details-box">
-						<div class="request-detail-headers">
-							<div class="request-detail-header-item">
-								<div class="request-detail-title">Request Date</div>
-								<div class="request-detail-value">2/12/2017</div>
-							</div>
-							
-							<div class="request-detail-header-item" style="flex:2;">
-								<div class="request-detail-title">Building Address</div>
-								<div class="request-detail-value">2420 Camino Ramon, San Francisco CA, 94582</div>
-							</div>
-							
-							<div class="request-detail-header-item">
-								<div class="request-detail-title">Building Suite</div>
-								<div class="request-detail-value">204A</div>
-							</div>
-						</div>
-						<div class="request-description">There was a pipe that is leaking underneath the sink in the kitchen.  I think you should send someone out to look at it to get it fixed as soon as possible because it is starting to get on the floor.</div>
-						<div class="request-photos">
-							<div class="request-photo-item"></div>
-							
-						</div>
-					</div>
+                <div class="panel" style="overflow:hidden; text-align:left; min-height:700px; padding:0;  display: flex;">
+               
 					
-					</div>
 					
-					<div class="send-reply-box">
-						<div class="send-reply-title">Send <strong>Property Manager</strong> a Message...</div>
-						<div class="send-reply-input">
-							<textarea placeholder="Write your message here..." name="" id="" cols="30" rows="10"></textarea>
+					<div class="halo-about">
+						<h1>Submit a Complaint</h1>
+						<p>Have an issue you'd like us to know about?  Drop us a line and we will get back to you as soon as possible addressing your issue so we can further discuss on the possible solutions.  We usually get back to you within 1 - 3 business days.</p>
+						<div style="display:flex; align-items: center; margin-bottom:5px; margin-top:25px;">
+						<div class="load-more-btn" style="margin-left:0; float: left; margin:0;">complaints@bishopranch.com</div>
+						<div style="margin-left: auto;">
+						<select style="width:200px;">
+							<option>Select a Complaint Type</option>
+							<option>Maintenance</option>
+							<option>Other</option>
+						</select>
+						</div>
+						</div>
+						<div class="complaint-body">
+							<textarea></textarea>
+						</div>
+						<div class="add-vendor-btn" style="margin-right:0;">Submit Complaint</div>
+						<div class="recent-complaints">
+						<h3>Recent Complaints</h3>
+						<div class="recent-complaint-item">
+							<div class="complaint-title">Sticky Floors Outside Office<br><span style="color:#3BB162; font-size: .8em;">Responded</span></div>
+							<div class="complaint-desc">The floor outside our office is extremely sticky and it is an eyesore.</div>
+							<div class="complaint-details">12/2/2016</div>
 						</div>
 						
+						
 					</div>
-					<div class="submit-reply-button">Send</div>
+					</div>
 					
-                        
+					
+					<div class="right-shortcuts">
+					<div class="right-shortcut-title">About</div>
+					<div class="right-shortcut-item"><a href="#">Connect with HALO</a></div>
+                       <div class="right-shortcut-item"><a href="#">Terms of Service</a></div>
+                       <div class="right-shortcut-item"><a href="#">Other</a></div>
+                       <div class="right-shortcut-title" style="margin-top:25px;">Help</div>
+                       <div class="right-shortcut-item"><a href="#">Submit a Complaint</a></div>
+                       <div class="right-shortcut-item"><a href="#">Help Community</a></div>
+					</div>
                         
 					
                         
@@ -135,7 +132,11 @@
 
 		
 	</div>
+   <script src="assets/js/selectize.js"></script>
     <script>
+		$('select').selectize({
+			
+		})
     	$(document).ready(function(e) {
             $('#notifications').click(function(){
 				if($('.notification-dropdown').hasClass('fadeInUp')){

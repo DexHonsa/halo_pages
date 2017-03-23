@@ -11,11 +11,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
     <link rel="stylesheet" type="text/css" href="assets/css/messages.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/selectize.css">
     
 	
 	<script src="assets/js/jquery-1.11.2.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/functions.js"></script>
+    
 </head>
 <body>
 	<div class="wrapper">
@@ -71,26 +73,37 @@
 							<i id="close-popup" class="fa fa-close"></i>
 						</div><div class="send-message-popup-stage">
 						<div class="popup-selector-dropdown" style="margin-bottom:20px;">
-						<select>
-						<option>All Tenants</option>
-						<option>Wells Fargo</option>
-						<option>Brookfield</option>
-						<option>Demont</option>
-						<option>Meridian</option>
-						<option>Fico Tech</option>
-						<option>Remedy Co.</option>
+						<div class="selector-title">Send to Tenants</div>
+						<select id="tenant-select">
+							<option>All Tenants</option>
+							<option>Wells Fargo</option>
+							<option>Telecorp</option>
+							<option>Activivion</option>
+							<option>Delta Insurance</option>
+							<option>Falcon Co</option>
+							<option>Druvey</option>
 						
 						</select></div>
 						<div class="popup-selector-dropdown" style="margin-bottom:20px;">
-						<select>
-						<option>Type of Emergency</option>
-						<option>Flood</option>
-						<option>Fire</option>
-						<option>Fire Drill</option>
-						<option>Earthquake</option>
-						<option>Shooter</option>
-						<option>Bomb Threat</option>
-						<option>Other</option>
+							<div class="selector-title">Type of Message</div>
+						<select id="emergency">
+							<option>Select Emergency</option>
+							<option>Fire</option>
+							<option>Shooting</option>
+							<option>Fire Drill</option>
+							<option>Earthquake</option>
+							<option>Flood</option>
+							<option>Amber Alert</option>
+						
+						</select></div>
+						<div class="popup-selector-dropdown" style="margin-bottom:20px;">
+							<div class="selector-title">Method</div>
+						<select id="method">
+							<option>All Methods</option>
+							<option>Email</option>
+							<option>Text</option>
+							<option>Halo Message</option>
+							
 						
 						</select></div>
 						
@@ -269,6 +282,27 @@
 
 		
 	</div>
+   <script src="assets/js/selectize.js"></script>
+   <script>
+	   var options = {
+				maxItems: 20,
+		   		placeholder: "Select Tenants...",
+		   plugins         : ['remove_button'],
+			};
+	   var options2 = {
+				create:true,
+		   		placeholder: "Select Emergency...",
+			};
+	   var options3 = {
+				maxItems: 20,
+		   		placeholder: "Select Method...",
+		   plugins         : ['remove_button'],
+			};
+		$('select#tenant-select').selectize(options);
+	   $('select#emergency').selectize(options2);
+	   $('select#method').selectize(options3);
+	   
+	</script>
     <script>
 		$('#send-message-btn').click(function(){
 			$('.overlay').fadeIn();
