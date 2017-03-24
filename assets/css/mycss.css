@@ -393,6 +393,7 @@ input:focus{
 	border-radius: 25px;
 	color:#808080;
 	opacity: 0;
+	margin-left:5px;
 }
 .roster-delete:hover{
 	cursor: pointer;
